@@ -1,0 +1,1200 @@
+@import "./../../../Assets//style/common.scss";
+
+.staking_dash_container {
+    position: relative;
+    overflow: hidden;
+}
+.staking_dashboard {
+    padding-top: 250px;
+    position: relative;
+    overflow: hidden;
+    .dash_heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-bottom: 90px;
+        h3 {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 24px;
+            color: $darkblue;
+            position: relative;
+            z-index: 1;
+        }
+        h3::after {
+            content: "";
+            height: 87px;
+            top: -29px;
+            left: -75px;
+            z-index: -1;
+            transform: rotate(-2.87deg);
+            width: calc(100% + 150px);
+            background-color: #efeeef;
+            position: absolute;
+        }
+    }
+    .dash_row {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-bottom: 55px;
+        .col_1 {
+            max-width: 38%;
+            width: 100%;
+            margin-right: 40px;
+        }
+        .col_2 {
+            max-width: 62%;
+            width: 100%;
+        }
+    }
+    .estimate,
+    .mystaking,
+    .total_staked,
+    .my_stake,
+    .reward_unclaimed {
+        margin-bottom: 50px;
+    }
+    .dash_title {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 24px;
+        color: $darkblue;
+        text-transform: uppercase;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .estimate {
+        width: 100%;
+        margin-right: 40px;
+        height: 188px;
+        padding: 30px 40px;
+        h2 {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 24px;
+            margin: 0;
+            margin-top: 16px;
+            color: $blue;
+        }
+        span {
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            margin-top: 15px;
+            display: block;
+            color: $extradark;
+        }
+    }
+    .mystaking {
+        width: 100%;
+        padding: 30px 40px;
+        height: 188px;
+        .staking_box_row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 25px;
+            .staking_box {
+                max-width: 33%;
+                width: 100%;
+                .title {
+                    color: $extradark;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                }
+                h2 {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: $extradark;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0;
+                    margin-top: 4px;
+                    .grow {
+                        background: #c3f7ce;
+                        padding: 3px 7px;
+                        font-family: Montserrat;
+                        margin-left: 10px;
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: #189e35;
+                        svg {
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .total {
+        width: 100%;
+        margin-right: 40px;
+    }
+    .total_staked {
+        width: 100%;
+        padding: 30px 40px;
+        height: 188px;
+        .total_stack_box {
+            margin-top: 25px;
+            h2 {
+                margin: 0;
+                padding-top: 1px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 36px;
+                line-height: 24px;
+                color: $darkblue;
+                span {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: $extradark;
+                    margin-left: 8px;
+                }
+            }
+            p {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 24px;
+                color: $extradark;
+            }
+        }
+    }
+    .my_stake {
+        width: 100%;
+        padding: 30px 40px;
+        height: 575px;
+        position: relative;
+        background-color: $lightblue;
+        .my_stack_row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 25px;
+            width: 100%;
+            .my_stack_box {
+                width: 50%;
+                .title {
+                    color: #cdadf5;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                }
+                h2 {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 24px;
+                    line-height: 24px;
+                    color: $white;
+                    // display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0;
+                    margin-top: 4px;
+                }
+            }
+        }
+        .connect_wallet {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            button {
+                background: $pink;
+                border: 5px solid $darkblue;
+                box-sizing: border-box;
+                box-shadow: -5px 11px 0px $darkblue;
+                width: 100%;
+                height: 61px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 26px;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+        .conntect_wall_image {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            bottom: 0;
+        }
+    }
+    // Connected Stak
+    .connected_stake {
+        padding: 30px 20px;
+        .dash_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0px 20px;
+            .hide_number {
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 900;
+                font-size: 14px;
+                line-height: 24px;
+                color: $blue;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                text-transform: capitalize;
+                svg {
+                    margin-right: 7px;
+                }
+            }
+        }
+        .my_stack_row {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding: 0 20px;
+            .my_stack_box {
+                margin-bottom: 40px;
+                width: 100%;
+                h2 {
+                    font-size: 36px;
+                    margin-top: 3px;
+                    padding-top: 5px;
+
+                    .loop {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        margin-bottom: -5px;
+                        padding-left: 7px;
+                        h4 {
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 14px;
+                            line-height: 24px;
+                            text-transform: uppercase;
+                            color: #cdadf5;
+                            margin: 0;
+                        }
+                        span {
+                            font-family: Montserrat;
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 14px;
+                            line-height: 24px;
+                            color: #cdadf5;
+                        }
+                        .dot {
+                            padding: 10px;
+                            display: block;
+                            margin-top: -5px;
+                        }
+                    }
+                }
+            }
+        }
+        .approve_loop {
+            background: $darkblue;
+            width: 100%;
+            height: 209px;
+            padding: 30px 28px 37px;
+            .approve_text {
+                display: flex;
+                justify-self: flex-start;
+                align-items: center;
+                padding: 0 15px;
+                p {
+                    margin: 0;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #cdadf5;
+                    padding-left: 24px;
+                    a {
+                        text-decoration: none;
+                        color: $white;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .approve_btn {
+                button {
+                    width: 100%;
+                    height: 61px;
+                    background-color: $pink;
+                    border: 0;
+                    margin-top: 35px;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 26px;
+                    text-transform: uppercase;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    // Stake Unstake
+
+    .stake_unstake {
+        .stake_unstake_action {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 40px;
+            padding: 0 20px;
+            button,
+            .stake {
+                background: $pink;
+                border: 5px solid $darkblue;
+                box-sizing: border-box;
+                box-shadow: -5px 11px 0px $darkblue;
+                width: 100%;
+                height: 61px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 26px;
+                text-transform: uppercase;
+                color: $white;
+            }
+            .unstake {
+                background: transparent;
+                margin-top: 20px;
+                border: 0px solid $darkblue;
+                box-shadow: none;
+            }
+        }
+    }
+
+    // Claim
+
+    .claim {
+        .my_stack_row .my_stack_box {
+            margin-bottom: 30px;
+        }
+        .stake_unstake_action {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-top: 0px;
+            padding: 0 20px;
+            button,
+            .stake {
+                background: $pink;
+                border: 5px solid $darkblue;
+                box-sizing: border-box;
+                box-shadow: -5px 11px 0px $darkblue;
+                width: 100%;
+                height: 61px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 26px;
+                text-transform: uppercase;
+                color: $white;
+            }
+            .unstake {
+                background: transparent;
+                margin-top: 20px;
+                border: 0px solid $darkblue;
+                box-shadow: none;
+            }
+        }
+        .locked_box {
+            height: 98px;
+            background-color: $darkblue;
+            padding: 25px 32px 22px 44px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            .locked {
+                span {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                    color: #cdadf5;
+                }
+                h2 {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: $white;
+                    margin: 0;
+                    margin-top: 5px;
+                }
+            }
+            .locked_btn {
+                button {
+                    background-color: transparent;
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 14px;
+                    line-height: 26px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: $white;
+                    border: none;
+                    padding: 9px 18px;
+                    background-color: $blue;
+                }
+                .retake {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+
+    .reward_unclaimed {
+        padding: 30px 40px;
+        width: 100%;
+        height: 818px;
+        position: relative;
+        .reward_row {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin-top: 25px;
+            .reward_box {
+                max-width: 50%;
+                width: 100%;
+                .title {
+                    color: $extradark;
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                }
+                h2 {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: $extradark;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    margin: 0;
+                    margin-top: 4px;
+                }
+            }
+        }
+        .claim_reward {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            button {
+                background: $blue;
+                border: 5px solid $darkblue;
+                box-sizing: border-box;
+                box-shadow: -5px 11px 0px $darkblue;
+                width: 100%;
+                height: 61px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 26px;
+                text-transform: uppercase;
+                color: $white;
+            }
+        }
+        .reward_table {
+            margin-top: 15px;
+            table {
+                .tbl_head {
+                    border-top: 3px solid #39007f;
+                    border-bottom: 3px solid #39007f;
+                }
+                tr {
+                    border: none;
+                    th {
+                        padding: 25px;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: $extradark;
+                    }
+                    td {
+                        padding: 14px 25px;
+                        border: none;
+                        border: none;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: $extradark;
+                    }
+                }
+            }
+        }
+        .question {
+            position: absolute;
+            display: block;
+            bottom: 0;
+            right: 0;
+            padding: 30px;
+            text-decoration: none;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 14px;
+            line-height: 24px;
+            color: $blue;
+        }
+    }
+}
+
+.staking_dash_container::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-image: url("./../../../Assets/images/line27.svg");
+    left: -40px;
+    top: 400px;
+    width: 1120px;
+    height: 1104px;
+}
+.staking_dash_container::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-image: url("./../../../Assets/images/line28.svg");
+    left: 0px;
+    bottom: -65px;
+    width: 650px;
+    height: 1100px;
+}
+.staking_dashboard::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-image: url("./../../../Assets/images/line29.svg");
+    right: 0px;
+    bottom: 190px;
+    width: 420px;
+    height: 700px;
+}
+
+// Popup
+
+.dashboard_modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(54, 40, 72, 0.96);
+    z-index: 9999999;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .popup {
+        background: #4e00ae;
+        border: 10px solid #350272;
+        box-shadow: -11px 23px 0px #350272;
+        width: 826px;
+        height: 490px;
+        position: relative;
+        padding: 50px 75px 75px;
+        .close {
+            color: #cdadf5;
+            border: 1px solid #cdadf5;
+            font-size: 30px;
+            padding: 12px;
+            display: block;
+            width: 25px;
+            padding: 10px 10px 13px 15px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            right: 0px;
+            top: 20px;
+            z-index: 99999;
+            border-radius: 3px;
+            position: absolute;
+            span {
+                transform: rotate(45deg);
+            }
+        }
+        .close:hover {
+            cursor: pointer;
+        }
+        .modal_heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+
+            .heading_background {
+                height: 72px;
+                width: 235px;
+                background-color: $pink;
+            }
+            .heading-wraper {
+                padding: 0;
+                width: unset;
+                .headings1 {
+                    margin: 0;
+                    margin-left: 115px !important;
+                    margin-top: 35px !important;
+                }
+                h1 {
+                    text-transform: capitalize;
+                    font-size: 36px;
+                }
+                .text-shadow {
+                    left: -56px;
+                    top: -22px;
+                }
+                .heading_background {
+                    top: unset;
+                    left: unset;
+                }
+            }
+        }
+        .amount_main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 32px;
+            background: $darkblue;
+            margin-top: 80px;
+            .amount_box {
+                p {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    color: #cdadf5;
+                    margin: 0;
+                    margin-bottom: 18px;
+                }
+                h2 {
+                    font-family: Montserrat;
+                    font-style: normal;
+                    font-weight: 900;
+                    font-size: 36px;
+                    line-height: 24px;
+                    color: $white;
+                    margin: 0;
+                    padding: 10px 0;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    text-transform: uppercase;
+                    .max {
+                        background: $blue;
+                        font-family: Montserrat;
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 14px;
+                        line-height: 24px;
+                        color: $white;
+                        padding: 2px 13px;
+                        margin-right: 10px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        .amount_action {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            .button,
+            button {
+                width: 676px;
+                height: 84px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 26px;
+                color: $white;
+                background-color: $pink;
+                border: 5px solid $darkblue;
+                box-sizing: border-box;
+                box-shadow: -5px 11px 0px $darkblue;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+            }
+        }
+    }
+    .success_modal {
+        width: 826px;
+        height: 657px;
+        .close {
+            top: -10px;
+        }
+        .success_action {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 80px;
+            .button,
+            .view,
+            button {
+                width: 676px;
+                height: 84px;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 18px;
+                line-height: 26px;
+                color: $white;
+                background-color: $pink;
+                border: 5px solid $darkblue;
+                box-sizing: border-box;
+                box-shadow: -5px 11px 0px $darkblue;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-decoration: none;
+            }
+            .view {
+                background-color: transparent;
+                border: 0px solid $darkblue;
+                box-shadow: unset;
+            }
+        }
+        .dash_modal_text {
+            margin-top: 160px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            color: #cdadf5;
+        }
+        .heading-wraper {
+            padding: 0;
+            width: unset;
+            margin-top: 29px;
+            margin-left: -20px;
+            .headings1 {
+                margin: 0;
+                margin-left: 115px !important;
+                margin-top: 35px !important;
+            }
+            h1 {
+                text-transform: capitalize;
+                font-size: 62px !important;
+                width: 50%;
+                white-space: pre-wrap;
+            }
+            .text-shadow {
+                left: -2px !important;
+                top: -73px !important;
+            }
+            .heading_background {
+                top: unset;
+                left: -85px !important;
+                width: 550px;
+                height: 220px;
+                background: $blue;
+            }
+        }
+    }
+}
+
+.dashboard_modal {
+    .popup::after {
+        content: "";
+        display: none;
+    }
+}
+
+.stakifng_footer {
+    padding-top: 130px;
+    padding-bottom: 30px;
+    p {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        .footer_links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 26px;
+            color: #000;
+            margin-left: 25px;
+            position: relative;
+            a {
+                display: block;
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 14px;
+                color: #000;
+                padding: 0px 15px;
+                text-decoration: none;
+                border-right: 1px solid #000;
+            }
+            a:last-child {
+                border-right: 0px solid #000;
+            }
+        }
+        .footer_links::after {
+            content: "";
+            height: 5px;
+            width: 5px;
+            position: absolute;
+            background-color: #000;
+            border-radius: 5px;
+            left: -3px;
+            top: 3px;
+        }
+    }
+}
+
+h2 {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.staking_dashboard .reward_unclaimed .reward_table {
+    overflow-x: auto;
+}
+
+@media screen and (max-width: 1400px) {
+    .idosales .idosales_container {
+        > .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .balance {
+            order: 1;
+        }
+
+        .project_row {
+            order: -1;
+        }
+    }
+
+    .container {
+        max-width: 90vw;
+    }
+
+    .staking_dashboard .mystaking {
+        padding: 20px;
+    }
+
+    .staking_dashboard .mystaking .staking_box_row .staking_box h2 .grow {
+        padding: 3px;
+    }
+
+    td {
+        white-space: nowrap;
+    }
+}
+@media screen and (max-width: 991px) {
+    .staking_dashboard {
+        .reward_unclaimed {
+            height: 830px;
+        }
+        .my_stake {
+            height: 595px;
+        }
+        .connected_stake {
+            padding: 30px 10px;
+            .my_stack_row .my_stack_box {
+                margin-bottom: 20px;
+            }
+            .approve_loop {
+                padding: 20px;
+
+                .approve_btn {
+                    display: flex;
+                    justify-content: center;
+                    button {
+                        margin-top: 25px;
+                        width: 90%;
+                        height: 51px;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .approve_loop .approve_text {
+                overflow: hidden;
+                text-overflow: ellipsis;
+
+                p {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .staking_dashboard {
+        .dash_heading {
+            h3 {
+                font-size: 28px;
+            }
+            h3::after {
+                content: "";
+                left: -30px;
+                width: calc(100% + 60px);
+            }
+        }
+        .dash_row {
+            flex-wrap: wrap;
+            margin: 0;
+            .col_1,
+            .col_2 {
+                max-width: 100%;
+                width: 100%;
+                padding-left: 20px;
+                padding-right: 10px;
+                margin-right: 0;
+            }
+        }
+        // .estimate,
+        .mystaking {
+            height: 405px;
+            .staking_box_row {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-top: 30px;
+                .staking_box {
+                    max-width: 100%;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+        .total_staked {
+            .total_stack_box {
+                h2 {
+                    font-size: 28px;
+                }
+            }
+        }
+        .my_stake {
+            padding: 30px 20px;
+            height: 625px;
+
+            .dash_title {
+                padding: 0 20px;
+            }
+            .my_stack_row {
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+                padding: 0 20px;
+                .my_stack_box {
+                    width: 100%;
+                }
+                .my_stack_box:first-child {
+                    margin-bottom: 25px !important;
+                }
+            }
+        }
+        .claim {
+            .locked_box {
+                height: 160px;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px 32px 22px 25px;
+                .locked {
+                    margin-bottom: 30px;
+                }
+                .locked_btn {
+                    button {
+                        padding: 5px 15px;
+                    }
+                }
+            }
+        }
+        .connected_stake {
+            .approve_loop {
+                height: 270px;
+                .approve_text {
+                    svg {
+                        width: 50px;
+                    }
+                }
+            }
+        }
+        .reward_unclaimed {
+            padding: 30px 0;
+            height: 973px;
+            .dash_title {
+                white-space: nowrap;
+                padding: 0 40px;
+            }
+            .reward_row {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 0 40px;
+                .reward_box {
+                    max-width: 100%;
+                }
+                .reward_box:first-child {
+                    margin-bottom: 40px;
+                }
+            }
+            .claim_reward {
+                padding: 50px 20px;
+            }
+            .reward_table {
+                width: 100%;
+                table {
+                    tr {
+                        td,
+                        th {
+                            white-space: nowrap;
+                            padding: 14px 10px 14px 15px;
+                        }
+                    }
+                }
+            }
+            .question {
+                bottom: 30px;
+                text-align: center;
+            }
+        }
+    }
+    .stakifng_footer {
+        padding-top: 90px;
+        p {
+            flex-direction: column;
+            .footer_links {
+                padding: 15px 15px 0 15px;
+                a {
+                    color: $lightblue;
+                }
+            }
+            .footer_links::after {
+                display: none;
+            }
+        }
+    }
+
+    .dashboard_modal {
+        .popup {
+            width: 400px;
+            height: 560px;
+            padding: 50px 25px 75px;
+            .amount_main {
+                flex-direction: column;
+                align-items: flex-start;
+                .amount {
+                    margin-bottom: 30px;
+                }
+                .amount_box {
+                    p {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+        .success_modal {
+            .modal_heading {
+                .heading-wraper {
+                    .heading_background {
+                        width: 300px;
+                        height: 120px;
+                        left: -55px !important;
+                    }
+                    .text-shadow {
+                        left: -1px !important;
+                        top: -45px !important;
+                    }
+                    h1 {
+                        font-size: 32px !important;
+                        line-height: 45px;
+                    }
+                    .headings1 {
+                        margin: 0;
+                        margin-left: 50px !important;
+                        margin-top: -15px !important;
+                    }
+                }
+            }
+            .dash_modal_text {
+                margin-top: 80px;
+            }
+            .success_action {
+                margin-top: 40px;
+                flex-direction: column;
+                button {
+                    width: 315px !important;
+                }
+                button:first-child {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

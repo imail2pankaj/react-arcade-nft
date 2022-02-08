@@ -1,0 +1,58 @@
+@import "./../../../Assets/style/common.scss";
+
+footer{
+    padding: 110px 0 45px 0;
+    background: $extradark;
+    .logo_desc{
+        width: 60%;
+        margin-top: 35px;
+    }
+    .follow_us{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        h5{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 24px;
+            color: $white;
+            margin-bottom: 35px;
+        }
+        .links{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            a{
+                display: block;
+                padding: 0px 10px;
+                color: $white;
+                border-right: 1px solid #fff;
+                text-decoration: none;
+            }
+            a:last-child{
+                border: none;
+            }
+            a:first-child{
+                padding-left: 0;
+            }
+        }
+    }
+    .copy_right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 130px;
+        span{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 26px;
+            color: $white;
+        }
+    }
+}
